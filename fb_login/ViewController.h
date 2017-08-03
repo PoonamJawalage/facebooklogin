@@ -7,9 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
+#import "AppDelegate.h"
 
 @interface ViewController : UIViewController
 
+{
+    
+    NSString    *facebookfirstname ;
+    NSString     *facebooklastname ;
+    NSString     *facebookid;
+    NSString     *facebookemail;
+    
+    NSArray *fbresult;
 
+}
+@property (weak, nonatomic) IBOutlet UIButton *btnToggleLoginState;
+
+@property (nonatomic, strong) AppDelegate *appDelegate;
 @end
 
